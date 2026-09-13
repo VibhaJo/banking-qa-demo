@@ -1,0 +1,7 @@
+services:
+  parabank:
+    image: parasoft/parabank
+    container_name: parabank
+    ports:
+      - '8080:8080'   # the app
+      - '9001:9001'   # HSQLDB
