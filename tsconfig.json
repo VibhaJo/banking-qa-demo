@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "noUncheckedIndexedAccess": true,
+    "target": "ES2022",
+    "skipLibCheck": true,
+    "types": ["node"],
+    "esModuleInterop": true
+  },
+  "include": ["playwright.config.ts", "tests", "pages", "fixtures", "api"]
+}

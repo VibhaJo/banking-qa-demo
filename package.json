@@ -1,18 +1,22 @@
 {
   "name": "banking-qa-demo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Playwright and TypeScript test suite for ParaBank, a deliberately flawed demo banking application.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "test:ui": "playwright test --project=ui",
+    "test:api": "playwright test --project=api",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vibha Joshi",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.63.0",
     "@types/node": "^26.5.1",
+    "dotenv": "^17.4.2",
     "typescript": "^7.0.2"
   }
 }

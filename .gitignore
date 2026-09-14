@@ -2,3 +2,9 @@ node_modules/
 test-results/
 playwright-report/
 .env
+.DS_Store
+
+# never commit keys
+id_ed25519*
+id_rsa*
+*.pem
